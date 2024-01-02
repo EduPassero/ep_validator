@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --background: rgb(2, 37, 41);
+    --label: #ffffff;
+    --inputfont: rgb(153, 210, 216);
+    --inputbg: rgba(134, 194, 201, 0);
+    ;
+}
+
+body {
+    height: 100%;
+    background-color: var(--background);
+}
+
+form {
+    width: 100%;
+    padding: 3em 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.field {
+    display: grid;
+    width: 20vw;
+    margin: 2em auto;
+}
+
+.field label {
+    padding-bottom: 0.3em;
+    color: var(--label);
+    font-size: 18px;
+}
+
+.field input {
+    background-color: var(--inputbg);
+    border: 1px solid var(--inputfont);
+    color: var(--inputfont);
+    border-radius: 5px;
+    padding: 7px;
+    transition: 500ms;
+}
+
+#enviar {
+    background-color: transparent;
+    border: solid 1px var(--inputfont);
+    color: var(--inputfont);
+    font-size: 18px;
+}
+
+#enviar:hover {
+    border: solid 1px rgb(19, 224, 224);
+    cursor: pointer;
+    background-color: rgb(57, 128, 136);
+    color: white;
+}

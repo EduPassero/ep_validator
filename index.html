@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form id="form">
+        <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" autocomplete="off">
+            <small><span class="helper-text"></span></small>
+        </div>
+
+        <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" autocomplete="off" formnovalidate>
+            <small><span class="helper-text"></span></small>
+        </div>
+
+        <div class="field">
+            <label for="phone">Phone</label>
+            <input type="number" id="phone" autocomplete="off">
+            <small><span class="helper-text"></span></small>
+        </div>
+
+        <div class="field">
+            <label for="login">Login</label>
+            <input type="text" id="login" autocomplete="off">
+            <small><span class="helper-text"></span></small>
+        </div>
+
+        <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <small><span class="helper-text"></span></small>
+        </div>
+
+        <div class="field">
+            <label for="passwordConfirm">Confirm Password</label>
+            <input type="password" id="passwordConfirm">
+            <small><span class="helper-text"></span></small>
+        </div>
+
+        <div class="field">
+            <input type="submit" value="Send" id="send" formnovalidate="formnovalidate">
+        </div>
+    </form>
+</body>
+<script src="index.js"></script>
+
+</html>
